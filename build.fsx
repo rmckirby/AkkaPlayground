@@ -6,13 +6,24 @@ let buildDir = "./build/"
 
 let akkaProject = "src/AkkaPlayground/AkkaPlayground.csproj"
 
+let mode = getBuildParam "mode"
+
 Target "Clean" (fun _ ->
     CleanDirs [buildDir]
+)
+
+Target "Build" (fun _ ->
+    !! "src/AkkaPlayground/AkkaPlayground.csproj"
+    |> match mode.ToLower() with
+       | "release" -> MSBuildRelease buildDir "Build"
+       | _ -> MSBuildDebug buildDir "Build"
+    |> Log "Build Output:"
 )
 
 Target "Default" DoNothing
 
 "Clean"
+    ==> "Build"
     ==> "Default"
 
 RunTargetOrDefault "Default"

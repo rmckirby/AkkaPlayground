@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src/AkkaPlayground", "src/AkkaPlayground/AkkaPlayground.csproj", "{081AB4E8-C44A-4FE1-9A69-BDB6DFDE85EC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaPlayground", "AkkaPlayground\AkkaPlayground.csproj", "{081AB4E8-C44A-4FE1-9A69-BDB6DFDE85EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

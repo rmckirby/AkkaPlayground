@@ -1,4 +1,4 @@
-using static System.Console.WriteLine;
+using static System.Console;
 
 namespace AkkaPlayground
 {
