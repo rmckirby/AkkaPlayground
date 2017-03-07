@@ -1,0 +1,15 @@
+group Core
+    source https://www.nuget.org/api/v2
+
+    nuget Akka ~> 1.0
+
+group Test
+    source https://nuget.org/api/v2
+
+    nuget NUnit ~> 3.0
+    nuget Shouldly ~> 2.6
+
+group Build
+    source https://nuget.org/api/v2
+
+    nuget FAKE ~> 4.0

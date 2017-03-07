@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src/AkkaPlayground", "src/AkkaPlayground/AkkaPlayground.csproj", "{081AB4E8-C44A-4FE1-9A69-BDB6DFDE85EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{081AB4E8-C44A-4FE1-9A69-BDB6DFDE85EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081AB4E8-C44A-4FE1-9A69-BDB6DFDE85EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081AB4E8-C44A-4FE1-9A69-BDB6DFDE85EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081AB4E8-C44A-4FE1-9A69-BDB6DFDE85EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
