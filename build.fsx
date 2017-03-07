@@ -13,7 +13,7 @@ Target "Clean" (fun _ ->
 )
 
 Target "Build" (fun _ ->
-    !! "src/AkkaPlayground/AkkaPlayground.csproj"
+    !! akkaProject
     |> match mode.ToLower() with
        | "release" -> MSBuildRelease buildDir "Build"
        | _ -> MSBuildDebug buildDir "Build"
