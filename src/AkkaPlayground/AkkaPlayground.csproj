@@ -35,6 +35,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Message\Greet.cs" />
     <Compile Include="Actor\GreetingActor.cs" />
+    <Compile Include="Message\MoodChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Message\" />

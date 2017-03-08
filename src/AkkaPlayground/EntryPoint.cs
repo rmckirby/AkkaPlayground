@@ -1,3 +1,4 @@
+using System;
 using Akka;
 using Akka.Actor;
 
@@ -17,6 +18,17 @@ namespace AkkaPlayground
                 var greeter = system.ActorOf<GreetingActor>("greeter");
 
                 greeter.Tell(new Greet("Bob"));
+
+                ConsoleKeyInfo key;
+                do
+                {
+                    key = Console.ReadKey();
+                    greeter.Tell(new MoodChange("angry"));
+                    greeter.Tell(new Greet("won't happen"));
+                    greeter.Tell(new MoodChange("happy"));
+                    greeter.Tell(new Greet("will happen"));
+                }
+                while (key.Key != ConsoleKey.Escape);
 
                 ReadLine();
             }
