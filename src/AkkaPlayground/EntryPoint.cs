@@ -10,18 +10,18 @@ namespace AkkaPlayground
 {
     public sealed class EntryPoint
     {
-		public void Run()
-		{
-			using (var system = ActorSystem.Create("MySystem"))
-			{
-				var greeter = system.ActorOf<GreetingActor>("greeter");
+        public void Run()
+        {
+            using (var system = ActorSystem.Create("MySystem"))
+            {
+                var greeter = system.ActorOf<GreetingActor>("greeter");
 
-				greeter.Tell(new Greet("Bob"));
+                greeter.Tell(new Greet("Bob"));
 
-				ReadLine();
-			}
-		}
+                ReadLine();
+            }
+        }
 
-		public static void Main() => new EntryPoint().Run();
+        public static void Main() => new EntryPoint().Run();
     }
 }
